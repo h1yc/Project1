@@ -1,0 +1,671 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-family: "Microsoft YaHei", "微软雅黑", "SimSun", "宋体";
+}
+.overflow {
+  width: 100%;
+  margin: 0 auto;
+}
+.overflow .el-header {
+  width: 80%;
+  background-color: grey;
+  height: 100%;
+  margin: 0 auto;
+}
+.overflow .el-header .overflow_main {
+  display: flex;
+  flex-direction: column;
+}
+.overflow .el-header .overflow_main .overflow_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.overflow .el-header .overflow_main .overflow_top .overflow_left {
+  flex: 1;
+  align-self: center;
+  margin-left: 8%;
+  font-size: 11px;
+}
+.overflow .el-header .overflow_main .overflow_top .overflow_left a {
+  color: red;
+  text-decoration: none;
+}
+.overflow .el-header .overflow_main .overflow_top .overflow_left span {
+  margin-left: 5%;
+}
+.overflow .el-header .overflow_main .overflow_top .overflow_right {
+  flex: 1;
+  font-size: 11px;
+  padding: 0;
+  margin: 0;
+}
+.overflow .el-header .overflow_main .overflow_top .overflow_right .active {
+  color: red;
+}
+.overflow .el-header .overflow_main .overflow_top .overflow_right ul {
+  margin-top: 0;
+}
+.overflow .el-header .overflow_main .overflow_top .overflow_right ul li {
+  float: left;
+  margin-left: 5%;
+  list-style: none;
+}
+.overflow .el-header .overflow_main .overflow_bottom {
+  display: flex;
+  margin-top: 2%;
+  margin-left: 10%;
+  flex-direction: row;
+}
+.overflow .el-header .overflow_main .overflow_bottom .overflow_logo {
+  flex: 1;
+}
+.overflow .el-header .overflow_main .overflow_bottom .overflow_logo img {
+  width: 95px;
+  height: 38px;
+  float: right;
+  margin-top: 7px;
+  margin-right: 40%;
+}
+.overflow .el-header .overflow_main .overflow_bottom .overflow_search {
+  flex: 2;
+}
+.overflow .el-header .overflow_main .overflow_bottom .overflow_search .el-input-group {
+  line-height: normal;
+  margin-top: 6px;
+  display: inline-table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.overflow .el-header .overflow_main .overflow_bottom .overflow_search .el-input__inner {
+  -webkit-appearance: none;
+  background-color: #FFF;
+  background-image: none;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  color: #606266;
+  display: inline-block;
+  font-size: inherit;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  padding: 0 15px;
+  transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: 100%;
+}
+.overflow .el-header .overflow_main .overflow_bottom .visibilty {
+  flex: 1;
+}
+.overflow .el-main {
+  padding: 20px;
+}
+.overflow .el-main .overflow_content {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  margin-top: 1%;
+  /*清除浮动*/
+}
+.overflow .el-main .overflow_content .overflow_tabber {
+  border-bottom: 2px solid red;
+  width: 80%;
+  align-self: center;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.overflow .el-main .overflow_content .overflow_tabber .overflow_list {
+  flex: 2;
+  height: 100%;
+}
+.overflow .el-main .overflow_content .overflow_tabber .overflow_list ul li {
+  height: 100%;
+  float: left;
+  margin-right: 5%;
+  list-style: none;
+  cursor: pointer;
+  text-align: center;
+  z-index: 1000;
+}
+.overflow .el-main .overflow_content .overflow_tabber .overflow_list ul li:hover {
+  font-size: 18px;
+}
+.overflow .el-main .overflow_content .overflow_tabber .overflow_list ul li:first-child {
+  color: #fff;
+  height: 100%;
+  width: 150px;
+  text-align: center;
+  background-color: rebeccapurple;
+}
+.overflow .el-main .overflow_content .overflow_tabber .overflow_fuli {
+  flex: 1;
+  float: right;
+  display: flex;
+  flex-direction: row;
+}
+.overflow .el-main .overflow_content .overflow_tabber .overflow_fuli .personfuli {
+  background: url('../assets/fuli.jpg');
+  background-size: 100% 100%;
+  float: right;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+.overflow .el-main .overflow_content .overflow_tabber .overflow_fuli .personfuli .fuli {
+  width: 100%;
+}
+.overflow .el-main .overflow_content .overflow_middle {
+  width: 80%;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.overflow .el-main .overflow_content .overflow_middle .list {
+  margin: 0;
+  width: 21.2%;
+}
+.overflow .el-main .overflow_content .overflow_middle .list ul {
+  box-shadow: 5px 0px  #ccc;
+  margin-top: 0.5%;
+}
+.overflow .el-main .overflow_content .overflow_middle .list ul li {
+  border-radius: 2px;
+  background-color: rebeccapurple;
+  list-style-type: none;
+  height: 46px;
+  padding: 0px 10px 0px 10px;
+  border-bottom: 1px solid black;
+  color: #fff;
+  line-height: 45px;
+  cursor: pointer;
+}
+.overflow .el-main .overflow_content .overflow_middle .list ul li span {
+  float: right;
+  margin-left: -13px;
+}
+.overflow .el-main .overflow_content .overflow_middle .list ul li:hover {
+  background-color: red;
+}
+.overflow .el-main .overflow_content .overflow_middle .lunbo {
+  margin-left: 0.5%;
+  width: 86%;
+  margin-top: 0%;
+}
+.overflow .el-main .overflow_content .overflow_middle .lunbo img {
+  width: 100%;
+  height: 100%;
+}
+.overflow .el-main .overflow_content .overflow_middle .person {
+  width: 1%;
+  margin-left: 0.5%;
+  display: flex;
+  flex-direction: column;
+}
+.overflow .el-main .overflow_content .overflow_middle .person .title {
+  color: red;
+  border-bottom: 1px solid #ccc;
+  padding: 12px 3px 9px 22px;
+}
+.overflow .el-main .overflow_content .overflow_middle .person .avator {
+  display: flex;
+  padding: 9px 0px 9px 25px;
+  flex-direction: row;
+}
+.overflow .el-main .overflow_content .overflow_middle .person .avator .img img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.overflow .el-main .overflow_content .overflow_middle .person .avator .introduce {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  margin-top: 5%;
+}
+.overflow .el-main .overflow_content .overflow_middle .person .avator .introduce .nichen {
+  font-size: 12px;
+}
+.overflow .el-main .overflow_content .overflow_middle .person .avator .introduce .onclick {
+  font-size: 10px;
+  margin-top: 4px;
+  color: red;
+}
+.overflow .el-main .overflow_content .overflow_middle .person .avatorlogin {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 0px 0px 17px;
+}
+.overflow .el-main .overflow_content .overflow_middle .person .avatorlogin .el-button {
+  line-height: 0;
+}
+.overflow .el-main .overflow_content .overflow_middle .person .avatorlogin .el-button--warning {
+  color: #FFF;
+  background-color: #FF7F00;
+  border-color: #E6A23C;
+}
+.overflow .el-main .overflow_content .overflow_middle .person .notice {
+  font-size: 13px;
+  padding: 0px 0px 0px 21px;
+}
+.overflow .el-main .overflow_content .overflow_middle .person .imgg {
+  height: 13.6%;
+}
+.overflow .el-main .overflow_content .starPro {
+  width: 85%;
+  height: 390px;
+  *zoom: 1;
+  align-self: center;
+  margin-left: 8%;
+}
+.overflow .el-main .overflow_content .starPro:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.overflow .el-main .overflow_content .starPro .pro {
+  width: 228px;
+  border: 1px solid rgba(100, 100, 100, 0.3);
+  height: 297px;
+  float: left;
+  margin-left: 1%;
+}
+.overflow .el-main .overflow_content .starPro .pro img {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto 30px;
+}
+.overflow .el-main .overflow_content .imgbuju {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 78%;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+.overflow .el-main .overflow_content .imgbuju .imagetitle {
+  border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.overflow .el-main .overflow_content .imgbuju .imagetitle .imageleft span {
+  color: #ccc;
+}
+.overflow .el-main .overflow_content .imgbuju .imagetitle .imagesort ul {
+  margin-top: 0;
+}
+.overflow .el-main .overflow_content .imgbuju .imagetitle .imagesort ul li {
+  float: left;
+  list-style-type: none;
+  margin-right: 28px;
+}
+.overflow .el-main .overflow_content .imgbuju .imagelist {
+  margin-top: 1%;
+  display: flex;
+  width: 97%;
+  flex-direction: row;
+}
+.overflow .el-main .overflow_content .imgbuju .imagelist img {
+  flex: 1;
+  width: 24%;
+  margin-right: 2.2%;
+}
+.overflow .el-main .overflow_content .phone {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  width: 80%;
+  align-self: center;
+  margin-left: 4%;
+}
+.overflow .el-main .overflow_content .phone .phometiotle {
+  border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  width: 97.6%;
+  justify-content: space-between;
+}
+.overflow .el-main .overflow_content .phone .phometiotle .phoneleft span {
+  color: #ccc;
+}
+.overflow .el-main .overflow_content .phone .phometiotle .phonesort ul {
+  margin-top: 0;
+}
+.overflow .el-main .overflow_content .phone .phometiotle .phonesort ul li {
+  float: left;
+  list-style-type: none;
+  margin-right: 28px;
+}
+.overflow .el-main .overflow_content .phone .phoneimage {
+  display: flex;
+  width: 97.4%;
+  flex-direction: row;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .first {
+  flex: 1;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .first img {
+  width: 100%;
+  height: 100%;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .second {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .second .third {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .second .third img {
+  width: 100%;
+  height: 70%;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .second .third p {
+  font-weight: bold;
+  margin-left: 10%;
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .second .third i {
+  font-size: 10px;
+  color: #ccc;
+  font-size: 17px;
+  margin-left: 8%;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .second .fourth {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .second .fourth img {
+  width: 100%;
+  height: 70%;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .second .fourth p {
+  font-weight: bold;
+  margin-left: 10%;
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .second .fourth i {
+  font-size: 10px;
+  color: #ccc;
+  font-size: 17px;
+  margin-left: 8%;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .fifth {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .fifth img {
+  width: 100%;
+  height: 80%;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .fifth p {
+  font-weight: bold;
+  margin-left: 10%;
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .fifth i {
+  font-size: 10px;
+  color: #ccc;
+  font-size: 17px;
+  margin-left: 8%;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .sixth {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .sixth .seven {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .sixth .seven img {
+  width: 100%;
+  height: 70%;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .sixth .seven p {
+  font-weight: bold;
+  margin-left: 10%;
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .sixth .seven i {
+  font-size: 10px;
+  color: #ccc;
+  font-size: 17px;
+  margin-left: 8%;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .sixth .eight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .sixth .eight img {
+  width: 100%;
+  height: 70%;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .sixth .eight p {
+  font-weight: bold;
+  margin-left: 10%;
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .sixth .eight i {
+  font-size: 10px;
+  color: #ccc;
+  font-size: 17px;
+  margin-left: 8%;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .nine {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .nine img {
+  width: 100%;
+  height: 80%;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .nine p {
+  font-weight: bold;
+  margin-left: 10%;
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+.overflow .el-main .overflow_content .phone .phoneimage .nine i {
+  font-size: 10px;
+  color: #ccc;
+  font-size: 17px;
+  margin-left: 8%;
+}
+.overflow .el-main .overflow_content .computer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  width: 80%;
+  align-self: center;
+  margin-left: 4%;
+}
+.overflow .el-main .overflow_content .computer .computertiotle {
+  border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  width: 97.6%;
+  justify-content: space-between;
+}
+.overflow .el-main .overflow_content .computer .computertiotle .computerleft span {
+  color: #ccc;
+}
+.overflow .el-main .overflow_content .computer .computertiotle .computersort ul {
+  margin-top: 0;
+}
+.overflow .el-main .overflow_content .computer .computertiotle .computersort ul li {
+  float: left;
+  list-style-type: none;
+  margin-right: 28px;
+}
+.overflow .el-main .overflow_content .computer .computerimage {
+  display: flex;
+  width: 97.4%;
+  flex-direction: row;
+}
+.overflow .el-main .overflow_content .computer .computerimage .first {
+  flex: 1;
+}
+.overflow .el-main .overflow_content .computer .computerimage .first img {
+  width: 100%;
+  height: 100%;
+}
+.overflow .el-main .overflow_content .computer .computerimage .second {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.overflow .el-main .overflow_content .computer .computerimage .second .third {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.overflow .el-main .overflow_content .computer .computerimage .second .third img {
+  width: 100%;
+  height: 70%;
+}
+.overflow .el-main .overflow_content .computer .computerimage .second .third p {
+  font-weight: bold;
+  margin-left: 10%;
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+.overflow .el-main .overflow_content .computer .computerimage .second .third i {
+  font-size: 10px;
+  color: #ccc;
+  font-size: 17px;
+  margin-left: 8%;
+}
+.overflow .el-main .overflow_content .computer .computerimage .second .fourth {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.overflow .el-main .overflow_content .computer .computerimage .second .fourth img {
+  width: 100%;
+  height: 70%;
+}
+.overflow .el-main .overflow_content .computer .computerimage .second .fourth p {
+  font-weight: bold;
+  margin-left: 10%;
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+.overflow .el-main .overflow_content .computer .computerimage .second .fourth i {
+  font-size: 10px;
+  color: #ccc;
+  font-size: 17px;
+  margin-left: 8%;
+}
+.overflow .el-main .overflow_content .computer .computerimage .fifth {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.overflow .el-main .overflow_content .computer .computerimage .fifth img {
+  width: 100%;
+  height: 80%;
+}
+.overflow .el-main .overflow_content .computer .computerimage .fifth p {
+  font-weight: bold;
+  margin-left: 10%;
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+.overflow .el-main .overflow_content .computer .computerimage .fifth i {
+  font-size: 10px;
+  color: #ccc;
+  font-size: 17px;
+  margin-left: 8%;
+}
+.overflow .el-main .overflow_content .computer .computerimage .sixth {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.overflow .el-main .overflow_content .computer .computerimage .sixth .seven {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.overflow .el-main .overflow_content .computer .computerimage .sixth .seven img {
+  width: 100%;
+  height: 70%;
+}
+.overflow .el-main .overflow_content .computer .computerimage .sixth .seven p {
+  font-weight: bold;
+  margin-left: 10%;
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+.overflow .el-main .overflow_content .computer .computerimage .sixth .seven i {
+  font-size: 10px;
+  color: #ccc;
+  font-size: 17px;
+  margin-left: 8%;
+}
+.overflow .el-main .overflow_content .computer .computerimage .sixth .eight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.overflow .el-main .overflow_content .computer .computerimage .sixth .eight img {
+  width: 100%;
+  height: 70%;
+}
+.overflow .el-main .overflow_content .computer .computerimage .sixth .eight p {
+  font-weight: bold;
+  margin-left: 10%;
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+.overflow .el-main .overflow_content .computer .computerimage .sixth .eight i {
+  font-size: 10px;
+  color: #ccc;
+  font-size: 17px;
+  margin-left: 8%;
+}
+.overflow .el-main .overflow_content .computer .computerimage .nine {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.overflow .el-main .overflow_content .computer .computerimage .nine img {
+  width: 100%;
+  height: 80%;
+}
+.overflow .el-main .overflow_content .computer .computerimage .nine p {
+  font-weight: bold;
+  margin-left: 10%;
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+.overflow .el-main .overflow_content .computer .computerimage .nine i {
+  font-size: 10px;
+  color: #ccc;
+  font-size: 17px;
+  margin-left: 8%;
+}

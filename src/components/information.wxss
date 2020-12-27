@@ -1,0 +1,881 @@
+.over_informations {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  font: 12px/1.5 'Microsoft YaHei', 'Heiti SC', tahoma, arial, 'Hiragino Sans GB';
+  color: #666;
+}
+.over_informations .el-header {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+.over_informations .el-header .magnify {
+  position: relative;
+}
+.over_informations .el-header .magnify .left_contaner {
+  width: 100%;
+  height: 100%;
+}
+.over_informations .el-header .magnify .left_contaner .middle_img {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  position: relative;
+}
+.over_informations .el-header .magnify .left_contaner .shade {
+  background-color: rgba(135, 206, 235, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: move;
+}
+.over_informations .el-header .magnify .left_contaner .middle_img img {
+  width: 100%;
+  height: 100%;
+}
+.over_informations .el-header .magnify .left_contaner .carousel {
+  width: 100%;
+  margin-top: 20px;
+  display: -webkit-flex;
+}
+.over_informations .el-header .magnify .left_contaner .carousel .show_box {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+.over_informations .el-header .magnify .left_contaner .carousel .arrow {
+  flex-basis: 25px;
+  cursor: pointer;
+}
+.over_informations .el-header .magnify .left_contaner .carousel .left_arrow {
+  background: url('http://www.jq22.com/demo/jQuery-fdj201705051102/images/btn_prev.png') no-repeat;
+  background-position: center center;
+}
+.over_informations .el-header .magnify .left_contaner .carousel .right_arrow {
+  background: url('http://www.jq22.com/demo/jQuery-fdj201705051102/images/btn_next.png') no-repeat;
+  background-position: center right;
+}
+.over_informations .el-header .magnify .left_contaner .carousel .picture_container {
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.over_informations .el-header .magnify .left_contaner .picture_container .picture_item {
+  height: 100%;
+  float: left;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.over_informations .el-header .magnify .left_contaner .picture_container .picture_item:hover {
+  border: 2px solid #f2019f;
+}
+.over_informations .el-header .magnify .left_contaner .picture_container .picture_item img {
+  width: 100%;
+  height: 100%;
+}
+.over_informations .el-header .magnify .right_contanier {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  border: 1px solid #ccc;
+}
+.over_informations .el-header .magnify .right_contanier .big_img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.over_informations .el-header .overflow_main {
+  display: flex;
+  flex-direction: column;
+}
+.over_informations .el-header .overflow_main .overflow_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.over_informations .el-header .overflow_main .overflow_top .overflow_left {
+  flex: 1;
+  align-self: center;
+  margin-left: 8%;
+  font-size: 11px;
+}
+.over_informations .el-header .overflow_main .overflow_top .overflow_left a {
+  color: red;
+  text-decoration: none;
+}
+.over_informations .el-header .overflow_main .overflow_top .overflow_left span {
+  margin-left: 5%;
+}
+.over_informations .el-header .overflow_main .overflow_top .overflow_right {
+  flex: 1;
+  font-size: 11px;
+  padding: 0;
+  margin: 0;
+}
+.over_informations .el-header .overflow_main .overflow_top .overflow_right .active {
+  color: red;
+}
+.over_informations .el-header .overflow_main .overflow_top .overflow_right ul {
+  margin-top: 0;
+}
+.over_informations .el-header .overflow_main .overflow_top .overflow_right ul li {
+  float: left;
+  margin-left: 5%;
+  list-style: none;
+}
+.over_informations .el-header .overflow_main .overflow_bottom {
+  display: flex;
+  margin-top: 2%;
+  margin-left: 10%;
+  flex-direction: row;
+}
+.over_informations .el-header .overflow_main .overflow_bottom .overflow_logo {
+  flex: 1;
+}
+.over_informations .el-header .overflow_main .overflow_bottom .overflow_logo img {
+  width: 95px;
+  height: 38px;
+  float: right;
+  margin-top: 7px;
+  margin-right: 40%;
+}
+.over_informations .el-header .overflow_main .overflow_bottom .overflow_search {
+  flex: 2;
+}
+.over_informations .el-header .overflow_main .overflow_bottom .overflow_search .el-input-group {
+  line-height: normal;
+  margin-top: 6px;
+  display: inline-table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.over_informations .el-header .overflow_main .overflow_bottom .overflow_search .el-input__inner {
+  -webkit-appearance: none;
+  background-color: #FFF;
+  background-image: none;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  color: #606266;
+  display: inline-block;
+  font-size: inherit;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  padding: 0 15px;
+  transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: 100%;
+}
+.over_informations .el-header .overflow_main .overflow_bottom .visibilty {
+  flex: 1;
+}
+.over_informations .el-main {
+  margin-top: 3%;
+  /*清除元素默认的内外边距  */
+  /*让所有斜体 不倾斜*/
+  /*去掉列表前面的小点*/
+  /*图片没有边框   去掉图片底侧的空白缝隙*/
+  /*让button 按钮 变成小手*/
+  /*取消链接的下划线*/
+  /*清除浮动*/
+  /*公共样式*/
+  /*版心--页面中间部分*/
+  /*顶部快捷导航*/
+  /*产品细节模块product_detail*/
+}
+.over_informations .el-main * {
+  margin: 0;
+  padding: 0;
+}
+.over_informations .el-main em,
+.over_informations .el-main i {
+  font-style: normal;
+}
+.over_informations .el-main li {
+  list-style: none;
+}
+.over_informations .el-main img {
+  border: 0;
+  /*ie6*/
+  vertical-align: middle;
+}
+.over_informations .el-main button {
+  cursor: pointer;
+}
+.over_informations .el-main a {
+  color: #666;
+  text-decoration: none;
+}
+.over_informations .el-main a:hover {
+  color: #e33333;
+}
+.over_informations .el-main button,
+.over_informations .el-main input {
+  font-family: 'Microsoft YaHei', 'Heiti SC', tahoma, arial, 'Hiragino Sans GB';
+}
+.over_informations .el-main body {
+  background-color: #fff;
+  font: 12px/1.5 'Microsoft YaHei', 'Heiti SC', tahoma, arial, 'Hiragino Sans GB';
+  color: #666;
+}
+.over_informations .el-main .hide,
+.over_informations .el-main .none {
+  display: none;
+}
+.over_informations .el-main .clearfix:after {
+  visibility: hidden;
+  clear: both;
+  display: block;
+  content: ".";
+  height: 0;
+}
+.over_informations .el-main .clearfix {
+  *zoom: 1;
+}
+.over_informations .el-main .fl {
+  float: left;
+}
+.over_informations .el-main .fr {
+  float: right;
+}
+.over_informations .el-main .fr .icomoon {
+  font-family: 'icomoon';
+  font-size: 16px;
+  line-height: 26px;
+}
+.over_informations .el-main .car {
+  font-family: 'icomoon';
+  color: #da5555;
+}
+.over_informations .el-main .arrow {
+  font-family: 'icomoon';
+  margin-left: 5px;
+}
+.over_informations .el-main .w {
+  width: 1200px;
+  margin: 0 auto;
+}
+.over_informations .el-main .style-red {
+  color: #c81623;
+}
+.over_informations .el-main .spacer {
+  width: 1px;
+  height: 12px;
+  background-color: #666;
+  margin: 9px 12px 0;
+}
+.over_informations .el-main .shortcut {
+  height: 31px;
+  background-color: #f1f1f1;
+  line-height: 31px;
+}
+.over_informations .el-main .shortcut li {
+  float: left;
+}
+.over_informations .el-main .header {
+  position: relative;
+  height: 105px;
+}
+.over_informations .el-main .logo {
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  width: 175px;
+  height: 56px;
+}
+.over_informations .el-main .logo a {
+  display: block;
+  width: 175px;
+  height: 56px;
+  background: url(../assets/logo.png) no-repeat;
+  font-size: 0;
+}
+.over_informations .el-main .search {
+  position: absolute;
+  top: 25px;
+  left: 348px;
+}
+.over_informations .el-main .text {
+  float: left;
+  width: 445px;
+  height: 32px;
+  border: 2px solid #b1191a;
+  color: #ccc;
+  padding-left: 10px;
+}
+.over_informations .el-main .btn {
+  float: left;
+  width: 82px;
+  height: 36px;
+  border: 0 ;
+  background-color: #b1191a;
+  font-size: 16px;
+  color: #fff;
+}
+.over_informations .el-main .hotwords {
+  position: absolute;
+  top: 65px;
+  left: 348px;
+}
+.over_informations .el-main .hotwords a {
+  margin: 0 10px;
+}
+.over_informations .el-main .shopcar {
+  position: absolute;
+  top: 25px;
+  right: 64px;
+  width: 138px;
+  height: 34px;
+  border: 1px solid #dfdfdf;
+  background-color: #f7f7f7;
+  line-height: 34px;
+  text-align: center;
+}
+.over_informations .el-main .count {
+  position: absolute;
+  top: -5px;
+  left: 100px;
+  background-color: #e60012;
+  height: 14px;
+  line-height: 14px;
+  padding: 0 3px;
+  border-radius: 7px 7px 7px 0;
+}
+.over_informations .el-main .nav {
+  height: 45px;
+  border-bottom: 2px solid green;
+}
+.over_informations .el-main .dropdown {
+  width: 209px;
+  height: 45px;
+}
+.over_informations .el-main .dropdown .dt {
+  width: 100%;
+  background-color: green;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 45px;
+}
+.over_informations .el-main .dropdown .dd {
+  height: 465px;
+  background-color: #c81623;
+  margin-top: 2px;
+}
+.over_informations .el-main .menu_item {
+  height: 31px;
+  line-height: 31px;
+  margin-left: 1px;
+  padding: 0px 10px;
+  transition: all 0.5s;
+}
+.over_informations .el-main .menu_item:hover {
+  background-color: #fff;
+  padding-left: 20px;
+}
+.over_informations .el-main .menu_item:hover a {
+  color: #c81623;
+}
+.over_informations .el-main .menu_item a {
+  font-size: 14px;
+  color: #fff;
+}
+.over_informations .el-main .menu_item i {
+  float: right;
+  font-family: 'icomoon';
+  font-size: 18px;
+  color: #fff;
+}
+.over_informations .el-main .navitems {
+  margin-left: 10px;
+}
+.over_informations .el-main .navitems li {
+  float: left;
+}
+.over_informations .el-main .navitems li a {
+  display: block;
+  height: 45px;
+  padding: 0 25px;
+  line-height: 45px;
+  font-size: 16px;
+}
+.over_informations .el-main .footer {
+  height: 100px;
+  background-color: #f5f5f5;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+.over_informations .el-main .mod_service {
+  height: 79px;
+  border-bottom: 1px solid #ccc;
+}
+.over_informations .el-main .mod_service li {
+  float: left;
+  width: 240px;
+  height: 79px;
+}
+.over_informations .el-main .mod-service-icon {
+  float: left;
+  width: 50px;
+  height: 50px;
+  background: url(../assets/icons.png) no-repeat;
+  margin-left: 35px;
+}
+.over_informations .el-main .mod_service_zheng {
+  background-position: -253px -3px;
+}
+.over_informations .el-main .mod_service_tit {
+  float: left;
+  margin-left: 5px;
+}
+.over_informations .el-main .mod_service_tit h5 {
+  margin: 5px 0;
+}
+.over_informations .el-main .mod_service_kuai {
+  background-position: -255px -54px;
+}
+.over_informations .el-main .mod_service_bao {
+  background-position: -257px -105px;
+}
+.over_informations .el-main .de_container {
+  margin-top: 20px;
+}
+.over_informations .el-main .crumb_wrap {
+  height: 25px;
+}
+.over_informations .el-main .crumb_wrap a {
+  margin-right: 10px;
+}
+.over_informations .el-main .preview_wrap {
+  width: 400px;
+  height: 590px;
+}
+.over_informations .el-main .preview_img {
+  height: 398px;
+  border: 1px solid #ccc;
+}
+.over_informations .el-main .preview_list {
+  position: relative;
+  height: 60px;
+  margin-top: 60px;
+}
+.over_informations .el-main .list_item {
+  width: 320px;
+  height: 60px;
+  margin: 0 auto;
+}
+.over_informations .el-main .arrow_prev,
+.over_informations .el-main .arrow_next {
+  position: absolute;
+  top: 15px;
+  width: 22px;
+  height: 32px;
+  background-color: purple;
+}
+.over_informations .el-main .arrow_prev {
+  left: 0;
+  background: url(../assets/arrow-prev.png) no-repeat;
+}
+.over_informations .el-main .arrow_next {
+  right: 0;
+  background: url(../assets/arrow-next.png) no-repeat;
+}
+.over_informations .el-main .list_item li {
+  float: left;
+  width: 56px;
+  height: 56px;
+  border: 2px solid transparent;
+  margin: 0 2px;
+}
+.over_informations .el-main .list_item li.current {
+  border-color: #c81623;
+}
+.over_informations .el-main .itemInfo_wrap {
+  width: 718px;
+  margin-top: -46%;
+}
+.over_informations .el-main .sku_name {
+  height: 30px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.over_informations .el-main .news {
+  height: 32px;
+  color: #e12228;
+}
+.over_informations .el-main .summary dl {
+  overflow: hidden;
+}
+.over_informations .el-main .summary dt,
+.over_informations .el-main .summary dd {
+  float: left;
+}
+.over_informations .el-main .summary dt {
+  width: 60px;
+  padding-left: 10px;
+  line-height: 36px;
+}
+.over_informations .el-main .summary_price,
+.over_informations .el-main .summary_promotion {
+  position: relative;
+  padding: 10px 0;
+}
+.over_informations .el-main .price {
+  font-size: 24px;
+  color: #e12228;
+}
+.over_informations .el-main .summary_price a {
+  color: #c81623;
+}
+.over_informations .el-main .mark {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+.over_informations .el-main .summary_promotion {
+  padding-top: 0;
+}
+.over_informations .el-main .summary_promotion dd {
+  width: 450px;
+  line-height: 36px;
+}
+.over_informations .el-main .summary_promotion em {
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+  line-height: 22px;
+  background-color: #c81623;
+  text-align: center;
+  color: #fff;
+}
+.over_informations .el-main .summary_support dd {
+  line-height: 36px;
+}
+.over_informations .el-main .choose_color a {
+  display: inline-block;
+  width: 80px;
+  height: 41px;
+  background-color: #f7f7f7;
+  border: 1px solid #ededed;
+  text-align: center;
+  line-height: 41px;
+}
+.over_informations .el-main .choose_color ul > li {
+  float: left;
+}
+.over_informations .el-main .choose_version {
+  margin: 10px 0;
+}
+.over_informations .el-main .choose_version a,
+.over_informations .el-main .choose_type a {
+  display: inline-block;
+  height: 32px;
+  padding: 0 12px;
+  background-color: #f7f7f7;
+  border: 1px solid #ededed;
+  text-align: center;
+  line-height: 32px;
+}
+.over_informations .el-main .choose_btns {
+  margin-top: 20px;
+}
+.over_informations .el-main .choose_amount {
+  position: relative;
+  float: left;
+  width: 50px;
+  height: 46px;
+}
+.over_informations .el-main .choose_amount input {
+  width: 33px;
+  height: 44px;
+  border: 1px solid #ccc;
+}
+.over_informations .el-main .choose_amount .add,
+.over_informations .el-main .choose_amount .reduce {
+  position: absolute;
+  right: 0;
+  width: 15px;
+  height: 22px;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+.over_informations .el-main .choose_amount .add {
+  top: 0;
+}
+.over_informations .el-main .choose_amount .reduce {
+  bottom: 0;
+  cursor: not-allowed;
+}
+.over_informations .el-main .addcar {
+  float: left;
+  width: 142px;
+  height: 46px;
+  background-color: #c81623;
+  text-align: center;
+  line-height: 46px;
+  font-size: 18px;
+  color: #fff;
+  margin-left: 10px;
+  font-weight: 700;
+}
+.over_informations .el-main .product_detail {
+  overflow: hidden;
+}
+.over_informations .el-main .aside {
+  width: 208px;
+  border: 1px solid #ccc;
+}
+.over_informations .el-main .tab_list li {
+  float: left;
+  height: 33px;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  line-height: 33px;
+}
+.over_informations .el-main .tab_list .current:hover {
+  background-color: #fff;
+  border-bottom: 0;
+  color: red;
+}
+.over_informations .el-main .first_tab {
+  width: 104px;
+}
+.over_informations .el-main .second_tab {
+  width: 103px;
+  border-left: 1px solid #ccc;
+}
+.over_informations .el-main .tab_con .one li {
+  width: 102px;
+  height: 30px;
+  float: left;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 2px;
+  border-bottom: 1px dashed #ccc;
+}
+.over_informations .el-main .tab_con .two {
+  border-bottom: 1px solid #ccc;
+}
+.over_informations .el-main .tab_con .two h5 {
+  padding-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 400;
+}
+.over_informations .el-main .aside_price {
+  font-weight: 700;
+  padding: 10px 10px;
+}
+.over_informations .el-main .as_addcar {
+  display: block;
+  width: 88px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+}
+.over_informations .el-main .detail {
+  width: 978px;
+  margin-bottom: 50px;
+}
+.over_informations .el-main .detail_tab_list {
+  height: 39px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+}
+.over_informations .el-main .detail_tab_list li {
+  float: left;
+  height: 39px;
+  line-height: 39px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+.over_informations .el-main .detail_tab_list .current {
+  background-color: #c81623;
+  color: #fff;
+}
+.over_informations .el-main .detail_tab_con {
+  margin-top: 10px;
+}
+.over_informations .el-main .detail_tab_con li {
+  margin: 2px;
+}
+.over_informations .el-main .more {
+  float: right;
+  font-weight: 700;
+}
+.over_informations .el-main .mian {
+  width: 1000px;
+  margin: 0 auto;
+  height: 1360px;
+}
+.over_informations .el-main .mian .m-l {
+  height: 100%;
+  float: left;
+  border: 1px solid #ccc;
+  /* background-color: rgb(23, 128, 136); */
+}
+.over_informations .el-main .mian .m-r {
+  width: 100%;
+  height: 100%;
+  float: right;
+  overflow: hidden;
+}
+.over_informations .el-main .demo img {
+  width: 180px;
+  height: 116px;
+  overflow: hidden;
+}
+.over_informations .el-main #tab {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin: 0px auto;
+}
+.over_informations .el-main .list_nav {
+  float: left;
+  width: 100px;
+  height: 50px;
+  background-color: #eee;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+.over_informations .el-main .list {
+  display: block !important;
+  width: 100%;
+  height: 50px;
+  background-color: #eee;
+}
+.over_informations .el-main .active {
+  color: white;
+  background-color: #b1191a;
+}
+.over_informations .el-main .tab_nav {
+  display: none;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 350px;
+}
+.over_informations .el-main .on {
+  display: block;
+}
+.over_informations .el-main #tabs {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin: 0px auto;
+}
+.over_informations .el-main .list_navs {
+  float: left;
+  width: 100px;
+  height: 50px;
+  background-color: #eee;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+.over_informations .el-main .lists {
+  display: block !important;
+  width: 100%;
+  height: 50px;
+  background-color: #eee;
+}
+.over_informations .el-main .lists li {
+  width: 114px;
+}
+.over_informations .el-main .active {
+  color: white;
+  background-color: #b1191a;
+}
+.over_informations .el-main .actives {
+  color: #b1191a;
+  font-weight: 700;
+  background-color: white;
+}
+.over_informations .el-main .tab_navs {
+  display: none;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 350px;
+}
+.over_informations .el-main .on {
+  display: block;
+}
+.over_informations .el-main .demo {
+  text-align: center;
+  padding: 6px 5px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.over_informations .el-main .demo:last-child {
+  border: none;
+}
+.over_informations .el-main .demo strong {
+  display: block;
+  margin: 8px 0px;
+  text-align: center;
+}
+.over_informations .el-main .demo P {
+  text-align: center;
+}
+.over_informations .el-main .demo button {
+  width: 120px;
+  text-align: center;
+  height: 32px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.over_informations .el-main .info {
+  padding: 15px;
+}
+.over_informations .el-main .info img {
+  width: 700px;
+  margin: 0 auto;
+}
+.over_informations .el-main .item li {
+  margin: 4px 0px;
+}
+.over_informations .el-main .item p {
+  margin: 5px 0px;
+}
+.over_informations .el-main .mod_help {
+  height: 187px;
+  border-bottom: 1px solid #ccc;
+}
+.over_informations .el-main .mod_help_item {
+  float: left;
+  width: 150px;
+  padding: 20px 0 0 50px;
+}
+.over_informations .el-main .mod_help_item dt {
+  height: 25px;
+  font-size: 16px;
+}
+.over_informations .el-main .mod_help_item dd {
+  height: 22px;
+}
+.over_informations .el-main .mod_help_app dt,
+.over_informations .el-main .mod_help_app p {
+  padding-left: 15px;
+}
+.over_informations .el-main .mod_help_app img {
+  margin: 7px 0;
+}
+.over_informations .el-main .mod_copyright {
+  text-align: center;
+}
+.over_informations .el-main .mod_copyright_links {
+  margin: 20px 0 15px 0;
+}

@@ -1,0 +1,266 @@
+.over_login {
+  width: 100%;
+  margin: 0 auto;
+}
+.over_login .el-header {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+.over_login .el-header .overflow_main {
+  display: flex;
+  flex-direction: column;
+}
+.over_login .el-header .overflow_main .overflow_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.over_login .el-header .overflow_main .overflow_top .overflow_left {
+  flex: 1;
+  align-self: center;
+  margin-left: 8%;
+  font-size: 11px;
+}
+.over_login .el-header .overflow_main .overflow_top .overflow_left a {
+  color: red;
+  text-decoration: none;
+}
+.over_login .el-header .overflow_main .overflow_top .overflow_left span {
+  margin-left: 5%;
+}
+.over_login .el-header .overflow_main .overflow_top .overflow_right {
+  flex: 1;
+  font-size: 11px;
+  padding: 0;
+  margin: 0;
+}
+.over_login .el-header .overflow_main .overflow_top .overflow_right .active {
+  color: red;
+}
+.over_login .el-header .overflow_main .overflow_top .overflow_right ul {
+  margin-top: 0;
+}
+.over_login .el-header .overflow_main .overflow_top .overflow_right ul li {
+  float: left;
+  margin-left: 5%;
+  list-style: none;
+}
+.over_login .el-header .overflow_main .overflow_bottom {
+  display: flex;
+  margin-top: 2%;
+  margin-left: 10%;
+  flex-direction: row;
+}
+.over_login .el-header .overflow_main .overflow_bottom .overflow_logo {
+  flex: 1;
+}
+.over_login .el-header .overflow_main .overflow_bottom .overflow_logo img {
+  width: 95px;
+  height: 38px;
+  float: right;
+  margin-top: 7px;
+  margin-right: 40%;
+}
+.over_login .el-header .overflow_main .overflow_bottom .overflow_search {
+  flex: 2;
+}
+.over_login .el-header .overflow_main .overflow_bottom .overflow_search .el-input-group {
+  line-height: normal;
+  margin-top: 6px;
+  display: inline-table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.over_login .el-header .overflow_main .overflow_bottom .overflow_search .el-input__inner {
+  -webkit-appearance: none;
+  background-color: #FFF;
+  background-image: none;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  color: #606266;
+  display: inline-block;
+  font-size: inherit;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  padding: 0 15px;
+  transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: 100%;
+}
+.over_login .el-header .overflow_main .overflow_bottom .visibilty {
+  flex: 1;
+}
+.over_login .el-main {
+  border-top: 1px solid red;
+  margin-top: 3%;
+  width: 90%;
+  margin: 3% auto;
+  padding: 0;
+  overflow: hidden;
+}
+.over_login .el-main .mainlogin {
+  height: 500px;
+  background: url('../assets/bg.jpg');
+  background-size: 100% 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.over_login .el-main .mainlogin .overflow_content .overflow_box {
+  width: 335px;
+  position: absolute;
+  padding: 15px;
+  height: 100%;
+  margin-left: 16%;
+  margin-top: 90px;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+}
+.over_login .el-main .mainlogin .overflow_content .overflow_box img {
+  width: 300px;
+  height: 120px;
+  align-self: center;
+  justify-content: center;
+}
+.over_login .el-main .mainlogin .overflow_content .overflow_box .message {
+  display: flex;
+  font-size: 10px;
+  display: -webkit-flex;
+  /*Safari*/
+  justify-content: space-between;
+  /*水平排布方式*/
+  align-items: center;
+  /*垂直对齐方式*/
+}
+.over_login .el-main .mainlogin .overflow_content .overflow_box .message span {
+  color: #fff;
+}
+.over_login .el-main .mainlogin .overflow_content .overflow_box .usersetting {
+  width: 80%;
+  padding: 0 0 0 31px;
+  flex: none;
+  display: flex;
+  margin-top: 15px;
+  font-size: 10px;
+  flex-direction: row;
+  color: #87CEFA;
+  justify-content: space-between;
+}
+.over_login .el-main .mainlogin .overflow_content .overflow_box .usersetting a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.over_login .el-main .mainlogin .overflow_content .overflow_box .hezuo {
+  display: flex;
+  flex-direction: column;
+}
+.over_login .el-main .mainlogin .overflow_content .overflow_box .hezuo .hezuotitle {
+  height: 43px;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+.over_login .el-main .mainlogin .overflow_content .overflow_box .hezuo .hezuoicon ul {
+  align-self: center;
+  margin: 0;
+  padding: 0;
+  margin-left: 20%;
+  margin-top: 3%;
+}
+.over_login .el-main .mainlogin .overflow_content .overflow_box .hezuo .hezuoicon ul li {
+  margin-right: 20%;
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  float: left;
+  list-style-type: none;
+}
+.over_login .el-main .mainlogin .overflow_content .overflow_box .hezuo .hezuoicon ul li span {
+  margin-left: 5%;
+}
+.over_login .el-main .mainlogin .overflow_content .overflow_box .overflow_login {
+  width: 100%;
+  margin: 5px auto;
+  position: relative;
+  background-color: #fff;
+}
+.over_login .el-main .mainlogin .overflow_content .overflow_box .overflow_login .el-button {
+  margin-top: 23px;
+  margin-left: 41px;
+  width: 75%;
+  border-radius: 20px;
+}
+.over_login .el-main .mainlogin .overflow_content .overflow_box .overflow_login .usersettings {
+  width: 80%;
+  padding: 0 0 0 31px;
+  flex: none;
+  display: flex;
+  margin-top: 15px;
+  font-size: 10px;
+  flex-direction: row;
+  color: #87CEFA;
+  justify-content: space-between;
+}
+.over_login .el-main .mainlogin .overflow_content .overflow_box .overflow_login .usersettings a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.over_login .el-main .mainlogin .overflow_content .overflow_box .overflow_login .VerificationCode {
+  font-size: 10px;
+  cursor: pointer;
+  margin-top: 31px;
+  color: #87CEFA;
+  position: absolute;
+  left: 235px;
+}
+.over_login .el-main .mainlogin .overflow_content .overflow_box .overflow_login p {
+  margin-top: 23px;
+  font-size: 10px;
+  margin-left: 45px;
+}
+.over_login .el-main .mainlogin .overflow_content .overflow_box .overflow_login p a {
+  color: #87CEFA;
+  margin-left: 5px;
+}
+.over_login .el-main .mainlogin .overflow_content .overflow_box .overflow_login .el-input {
+  margin-top: 20px;
+}
+.over_login .el-main .mainlogin .overflow_content .overflow_box .overflow_login .el-input__inner {
+  border-top: none;
+  margin-left: 30px;
+  width: 80%;
+  border-right: none;
+  border-bottom: 1px solid #ccc;
+  border-left: none;
+}
+.over_login .el-main .paymethods {
+  display: flex;
+  width: 80%;
+  align-self: center;
+  margin-left: 10%;
+  margin-top: 2%;
+  flex-direction: column;
+}
+.over_login .el-main .paymethods .paylist {
+  border-bottom: 1px solid #ccc;
+  font-size: 10px;
+}
+.over_login .el-main .paymethods .paylist ul li {
+  padding: 0 15px 0 15px;
+  /* margin-right: 5%; */
+  border-right: 1px solid #ccc;
+  float: left;
+  list-style-type: none;
+}
+.over_login .el-main .paymethods .payintroduce {
+  font-size: 10px;
+  margin-left: 7%;
+}
+.over_login .el-main .paymethods .payintroduce ul li {
+  margin-right: 1%;
+  float: left;
+  list-style-type: none;
+}
